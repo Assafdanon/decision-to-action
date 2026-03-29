@@ -23,7 +23,7 @@ export default function LoginPage() {
         router.push("/");
         router.refresh();
       } else {
-        setError(data.error || "שגיאה בהתחברות");
+        setError(data.error || "שגיאה");
       }
     } catch {
       setError("שגיאת רשת");
@@ -60,7 +60,7 @@ export default function LoginPage() {
           עץ החלטה → פעולה
         </h1>
         <p style={{ color: "#94a3b8", fontSize: "14px", marginBottom: "32px" }}>
-          הכנס אימייל כדי להתחבר
+          הכנס אימייל כדי להתחיל
         </p>
 
         <form onSubmit={handleLogin}>
